@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>JAVA Script - 객체</title>
+</head>
+<body>
+	<h1>Java Script - 객체</h1>
+	
+	
+	<button type="button" id="showImage">이미지ㄱㄱ</button>
+	<button type="button" id="showWindow">windowㄱㄱ</button>
+	<button type="button" onclick="location.href='http://naver.com'">naverㄱㄱ</button>
+	<script>
+	//객체object
+		var sj = {name: "지현", kor: 99, eng: 98, mat: 97, total:function(){return this.kor + this.eng + this.mat;}};
+		var sj2 = {name: "지현2", kor: 99, eng: 98, mat: 97, total:function(){return this.kor + this.eng + this.mat;}};
+	//객체속성 : 객체명.속성명
+		document.write("<p>"+ sj.name +"</p>");
+		document.write("<p>"+ sj.kor +"</p>");
+		document.write("<p>"+ sj.eng +"</p>");
+		document.write("<p>"+ sj.mat +"</p>");
+	
+	//객체 함수 객체명.함수명
+		document.write("<p>"+ sj.total() +"</p>");
+	
+	//게시판 목록의ㅐ 일부를 객체로 정의
+	//번호 제목 작성자 작성일 조회수 본문
+		var board = { bno:1, title: "시간은 금이라구", uid :"cloud",
+			regdate: "2018-01-18 12:12:12", reads:254, contents:"시간은 금이라구 시간은 금이라구"};
+	
+	//연관배열 을 목록 형태로 정의 :JSON
+		var obj1 = {a:1,b:2,c:3};
+		var obj2 = {a:{x:1,y:2,z:3},
+					a:{x:1,y:2,z:3}};
+		var obj3 = {a:[{x:1,y:2,z:3},
+					{x:1,y:2,z:3},{x:1,y:2,z:3}]};	//ㅊㅊ
+	</script>
+	
+	<script>
+		function showNewImage()
+		{
+			var img =document.createElement("img");		//<img>
+			//img tag 생성
+			img.src = "./images/index.jpg"				//<img src=""~~~">
+			//img tag 에 src 속성에 이미지파일지정
+			var h1 = document.getElementsByTagName("body");
+			//문서내 h1 요소를 수집함
+			h1[0].appendChild(img);
+			//첫번쨰 h1 요소의 자식요소로 img tag 를 추가
+			//<h1><img src=""></h>
+		}
+		function makeNewWindow()
+		{
+			//open(주소 이름 속성)
+			window.open("http://naver.com","","width=150,height=150,menubar=no,scrollbars=no,status=no")
+		}
+		
+		
+		//버튼에 이미지 처리하기
+		var btn = document.getElementById("showImage");
+		btn.onclick = showNewImage;
+		
+		var btn2 = document.getElementById("showWindow");
+		btn2.onclick = makeNewWindow;
+		
+	</script>
+	
+	
+
+</body>
+</html>

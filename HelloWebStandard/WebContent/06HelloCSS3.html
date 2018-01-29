@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS style sheet</title>
+<link href="./css/normalize.css" rel="stylesheet">
+<link href="./css/06css3.css" rel="stylesheet">
+	<style>
+		/*내부스타일*/
+		p{color:green; font-weight:bold;}
+	</style>
+	<style>
+		/*CSS 가상선택자 : id 속성명*/
+		input:focus {border:1px solid black} 
+		input[type=text]:focus {background-color:yellow; }
+		input[type=password]:focus {background-color:lime;}
+		input:hover{background-color: gold;}
+		/*CSS타입 선택자: 테그명*/
+		p{color:maroon; font-style:italic;}
+		/*CSS class 선택자 : class 속성명*/
+		.para{text-decoration:none; color: gold}
+		/*CSS id선택자 : id 속성명*/
+		#unique {color:red;}
+	</style>
+</head>
+<body>
+	<h1>CSS style sheet</h1>
+	<p style="color:red;">인라인 스타일시트 :테그에직접스타일적용</p>
+	
+	<p>내부스타일시트: 문서전처대상으로 적용할 스타일</p>
+	
+	<p>외부스타일시트 : 모든문서를 대상으로 공통으로적용할스타일정의</p>
+	
+	<h1>CSS Reset</h1>
+	<p>CSS 를 적용하더라도 모든 부라우저에 동일하게 보이는 것은 아님</p>
+	<p>각 브라우저마다 기본적으로 적용되어 있는 스타일의 차이떄문인데</p>
+	<p>이것을 CSS Reset 이라는 특수한 기능으로 모든 브라우저의 기본 스타일 여백 등등을 초기회 시킬수 있음</p>
+	<p>normalize.css 를이용해서 css적용을 표준화 할수 있음</p>
+	
+	<h1>CSS - 선택자</h1>
+	<h1>테그에 작성할 내용은 Lorem Ipsum 을 이용한다</h1>
+	<h1>Lorem Ipsum : UI 디자인시 폰트와 같은 시각적인 연출을 보여주기 위해 사용하는 
+	문자/문장 채우기 - 디자인용 채움 글모음</h1>
+	<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at interdum dolor.</p>
+	<p>Fusce consectetur urna eget ipsum efficitur, nec venenatis lacus sagittis. Aenean porttitor nunc ex, eu egestas tortor vulputate a.</p>
+	<p class="para">Suspendisse tincidunt tortor vel dapibus laoreet. Integer ultrices urna vitae magna luctus bibendum.</p>
+	<p id="unique">Mauris fringilla, risus eget gravida tincidunt, justo magna posuere velit, a fermentum tortor sapien vitae nunc.</p>
+	<p class="para">Ut a sapien ac enim ultricies placerat. Praesent vehicula gravida enim, vel tempor lacus aliquam id.</p>
+	
+	<h1>CSS - 가상선택자</h1>
+	<p>링크와 관련된 가상 선택자는 a:link, a:visited a:active :hover 등이잇다</p>
+	
+	<div>
+		<label>password</label>
+		<input type="password" name="passwd">
+	</div>
+	
+	<p></p>
+	<p></p>
+	
+</body>
+</html>

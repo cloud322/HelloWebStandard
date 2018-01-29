@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML -5 Table</title>
+</head>
+<body>
+	<h1>HTML -5 Table</h1>
+	<table border="1" width="350px" cellspacing="0" cellpadding="5">	<!-- 표작성시작 -->
+		<tr>
+			<th>name</th><th>국어</th><th>영어</th><th>수학</th>
+		</tr>
+		<tr>
+			<th>지현</th><th>100</th><th>100</th><th>100</th>
+		</tr>
+		<tr>
+			<th>수지</th><th>99</th><th>99</th><th>99</th>
+		</tr>
+	</table>
+	
+	<h1>HTML - form 다루기</h1>
+		<form name="sjform" action="" method="get" enctype="multipart/form-data">
+			<div>name
+				<input type="text" name="name" required="required">
+			</div>	
+			<div>
+				<label for="">국어</label>
+				<input type="text" name="kor" id="kor" required="required">
+			</div>	
+			<div><label for="">영어</label>
+				<input type="text" name="eng" id="eng" required="required">
+			</div>	
+			<div><label for="">수학</label>
+				<input type="text" name="mat" id="mat" required="required">
+			</div>
+			<div><input type="submit" value="입력완료">
+				<input type="reset" value="다시입력">
+			
+				<button type="submit">입력완료</button>	
+				<button type="reset">다시입력</button>	
+			</div>
+		</form>
+		
+	<form>
+		<div>
+			<label for="pwd"> 비밀번호</label>
+			<input type="password" name="pwd" id="pwd">
+		</div>
+		<div>
+			<label for="memo"> 메모작성</label>
+			<textarea name="memo" id="memo" rows="7" cols="1%"></textarea>
+		</div>
+		<div>
+		성별은?
+			남자<input type="radio" name="gender" id="gender" value="m">
+			여자<input type="radio" name="gender" id="gender" value="f">
+		</div>
+		<div>
+			취미는?
+			게임<input type="checkbox" name="hobby" value="game">
+			운동<input type="checkbox" name="hobby" value="exe">
+			여행<input type="checkbox" name="hobby" value="trip">
+			프로그래밍<input type="checkbox" name="hobby" value="program">
+		</div>
+		<div>
+			거주지역은?
+			<select name="zipcode">
+				<option>-- 선택하세요 -- </option>
+				<option>서울 </option>
+				<option>경기</option>
+				<option>부산</option>
+			</select>
+		</div>
+		<div>
+			입력양식 제어 (read only)
+			<input type="text" readonly="readonly">
+			입력양식 제어 (disabled)
+			<input type="text" disabled="disabled">
+			입력양식 제어 (placeholder)
+			<input type="text" placeholder="보임??">
+		
+		<h1>HTML -5 image</h1>
+			<p><img src=https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png></p>
+			<p><a href="http://upbit.com"><img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAA5FBMVEX///9NTU33kxpLS0s+Pj5BQUFISEjLy8tERERra2s8PDw5OTn3jgD19fX5+fk3Nzf2iQCxsbHi4uLZ2dnCwsKXl5fu7u5UVFQwMDBmZmaFhYVZWVmPj49zc3PPz8/f39+oqKi5ubkrKyt9fX2Hh4efn5/2hQCTk5N3d3dgYGCrq6v/+vT5sWr83MP4pFP97Nz+9Oz80qr3kyX5tHL3mT75u4b95M7/smP6xZ//w4b6xpj3lCD5tHv3ljT82Lf3nU3qwI/ltn/txpn4pV3/unP6wpL4o0r3min81bH5r3X5uY34oT2qRb7XAAAP9klEQVR4nO1caXvaSBJG1oEAIe4bYzAGg/Ed2zPrc3ezyWQ2////rATq7rfU3QhInsmzz/T7YTyBVqtUXXeVyOUMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP7GuH26ev7PbzH+cfd0s//1Yb3RbOV/Pl3/B1g9PX7cV4MgOIoRBNXg4fJ9ZxaWG6PatLf0Sk7pZIfVzUWv12s1foTen4TGMKJk2gx/bJeb17fqhnGAoHp0/b7a4erJsuMUfc+2InjZy5sdx7Nt23f6P0j1D6O+WFPiFZc/cpRP14HEuwTVt+dsBh6vGbeGPc1c3XLYcrfwA0T/BDR8j5FdHB26yc1nHe82Mnh/l7XDKeee5U6yFl84YnWxdijRPwN1V1Bi9w7bY/WolTzOwIen7WRUgH1ZWoA0W9aBRP8cHHtASWUHmy3j6T6LeWsGftm2R80XVPhZN5wizVbpF1q/UQUpcZoHbPFc3YF5Mf8+b7GAU9CBLGvW7iDNVvcXsu+MHGS21ZHxuovobfj3pg9iuiB8WcasUSTsK6bY127kx9nO5+fgmFKyf7z6587cixmo418b2OdmObBGiRB9zL+oj5rnvYHlOO5s7+c4CGGPUFKq77vB5T7ci6Dh3wScQabpo+xzEo1pdzqe424Cx4OM0CEg0pdpdSRoZO/lba4ziGr+DUXUZy2zbkptXyf5tAnBzOm+z3EoiO0r7Rv3fVEzKfiUu7n7Gqdt8ldflRuBNfMuMm+LnrfEopwZPsmez3EwRmB0iq09L37SiFj1PfryUxA8vr5IKyLWyggxaM62v22LR/pCTUEkvb/I9EVo8cilMtzz0pVOQWMPsXo7Cm6jdETm7ZW8E5o+d4c4pD3t+rZle91jbqxD2OIvM30RakU3OkuvaO0dtMhuI5ivP3qIvrypHn1s/kiLbqWdWqB4HelbFeqt/vG0BVF+Htj3l5m+GOXacLEYTvYOPmXVfchdfflanVcvc3EwHbxGf74ozN+ltBVYrUMVbwwnsEPF5tfjTeJLzK/c6uoxVs/LYK2lqlLCXPK+aPoOVDyIwLx9bfivwLskfGjVVo8vMZdu72XuHR1dp7bCmMMtH0YO5MyH5E5/ORRaSaUqNnFPcxX75qnqC8Yc9mHUjND0/eoK6g64Urnd719SennzSS5AR/iTrlpSxas3x61hq9bcJwXCik121DeazAoDy/Os5XTcbKvXlJvj6aDj2Z1ea3JQISoXNpqT8fnZWaFwNqxNaBXuWiVWR0E1bddWXxQCOKe1FzB9Xm1su64XwY/+zFSPdtErcCyYoEGx2uociwWFXjoKDycF102Su0jYPde1ZnKBcbIUa6Il3lhlU9oDcZ8B3aNRm8ZP4Huebcd3if7fORNZyUqplcL+AX9uH+QA5xlvNcIKiodi5DsKP1wQqu6dsQ/xKoJUDNgeOq6dXuM5A7pq7LqpJb4qp5iAzbbESYfNqe/60l2i2yyZQt1pSgWJ/budf//CDdzqWlpMnMeFJ92Jwx2kBbA8gG9Zbesk/bhiCYpNeVhS36uE7BtZqsPwLUkVhmIzKBeclVzdA9mV8WbNb2rurSPm3NotB9X7d8Y/yf8S7S3ouRcdmZeiGustXfbdRMs+NIRN7XN1wNsMS5pFlbSOq4OlpebyNRIh1uguC4k3NdQqC5AlWa1+AypOt93Psi1qdmrIKfbUfVlVkscC7e8XNYssd8wXlZdaO2BV6ElikVJUW+r6k1zvES+80Zm+jcCtPpJ//r7ZUkrdgv8KKk50p804sCBEL0Bj+uxDrfqLKDzcwhef86Xt6Q5iDULJCAj3eJiQd/SXx4gzym8Zpq9KhVEuHHwGcdI/1gbEMIWgG1xo2totuOkLB3oL6/FiSXu76PjEf5zDQYp2X3+LJV/fLNKHZw37hOnbsC+pTt1Iy6uCiun220UYAM0noIFdduRN7VPz9HcL96wK2ye0tspedJKovlBqFgeQ6+mvTqjO5T5phC+Rtj8T3WbphVxdmAsquln3s0pQAsQEz2ei1dLxxjtnjyqvsHnsx61DIb1K+jeY0jI0KcWAQT1Ll+IC73cN+xJfe3N3Gczn83uWBH+SpG/Oq1Zt0iq1S6fWtN/rEnHyoHEGlWYxzIGLowBVoJukvxcpg+R3S8fD2bA/OC3aG2seY0xW2V23PzsbdIlAOoKSBnb2uenDINY77S4X/X7nlJyCN879oWEf5hwiNrmVVb3Ko0ISc3SnSXAwIV6yI5wv6IbPRKEN5LnjGuBic2GdOnfXHXMlzA+7zDbUCfdKiw1L2j18eKiFt0DOhOnDWJBJddgn0tDPvajZ95ZTQiptIfuwS+SIyIr4Y97QIGEBn4loZpVKaSjGYle+JzsZ5NOp8FcQp8eiwzAVhIN6FMSnvtB04k8GGvYx00cy2ts71QCMYB8cuYcNcizDiPAjD1JZZDKJpVJVs7CJR2E7mgJAEwX+FLpmqKWiD1gGwkVmiIoAIy9ltIgdHfs2tm71Flx+4yx8elN5ac4+NMAOdonaWEjgjg07g9zig3goi9WkselqKiy5AahBheTA5HL2YR1cnjgRzImKEO8TEjS2T0R9QXV+zeVL1Urn7EPTVyKPgykRnySABI/nSSGwVDVjR+Z4HN34Foa7Hh3yQEXwWaIzBoESremW6ngjnGFFSFOuSkxfEvXNvzIJfJCXcs+LpNEuERhhbprrqg7vKMP0LYB0V1vIx5JXamiLNAKZ8AJDIC8C00d6BgsyB/CqFD6S8MYjQQn/FP3gOSMQtk0pHng2HtRjnsRDWExbBjkJIXG7uko0How/Tn2nCFFCPBPeHWjDnUoo5+h+prnf5TQi4AnvV/5ZMlN6K7vegO2LlNGi20zBPtQNrtA9OHGF6cMag68dYUAJq6RntnCAqS5/VuSMQi9DCgxwwhGN72n2fb96fHnYCNstlzU+UfAhsY/lvBhzpFQGjAuvpoGGCXcCB6tqkE9RwLUNgIJq5wRlZF/CFDyUASccDeIx7oDTnxOp2Fx9F0tFC45J30oyfrzisqU9O5PZh7rBh+kaGaYP9N3Wjh+VwTVKoz5tBfswPBaMUh5vjjbx4ww7xb4XWPo6T9pDwX1i+xSTGozdGHOkrDoUNJjnRd1Ql0plxuCz63vwmGtJ46po+5LxuVBV8yazX2RWEs1zfMTUd9Dexe374/d4uuqVeV65K8crBnrThyVQ9tioGz32kKCctqohgcMv2vEjXCXNmiumD8vgj9Smr4umDx1vvD01fsE/ts7Ny4EfM30jCLZKtKpMXFvCWdQN3iWyYJ2iQT7DBrp2Zh8qEbxKw4EWJlF/LPyIjBwNYg9lGD3HOP6Aam8wr14/61gojwkF7DWPC9jXoVcpXBt2ibiTOEG9ULQT0VnbuowDvXc6bIlkBx4+0QN1l2ihOt4c7WRtAnu54hfM54rZMwxkhO4ytYYkwk75O5SaxLWdqHQD5SB1Amv0LYCWfVBUkL234pUdVeGHNgFRESaSd1N1O9Zzfa93dABtJU8JbWaJYlQ098uRLJG5NqRiyXQDpCt9AmuQYrZugAY9geR4MY9NHG9Z2SU6UTUBY2AnKwnsFVWotzVbq/cx0xL5Wn1TvDPDR6xO0PRRycgDKUwe0EDxLhE8uPKVBjK9rZO+rXHLOTx8MoKD2Y/YdKKMBXOkk8W0X87E1knbXXUdLD/PX64vP10+VBWjMGLAD/15hdJMSnQbAkmXiMsqLKuogmJkn69zHYR9afeMpZ/k4VHkhaNWHm+OdrK4aZDKBsFmpLm6Ge9TToZvhI9rN8YceL945tWSSKmjbjBOYYFNWSpF5dUGLsi+dGKH0RKr12CXiAdL5HhREZTlXMn6rU3f/fqPeq4vWcYtH5ZKqeIhpyw3qaYpgwUst3RVnGkpNEdCqA/fQ9LKSj7DLhE/EuXxxjj3pB0iPKal6/FqFSW8yWSzFi+8korNBfJGTojVRV7sg4q36BJlvs5BXljQDk6jrTgm3xwrSisYHos0GkkhTgqH/uFs0iIWRX9/bOoEW14TFGV6YmpRcsIl6c6wUi4ECy5XMKIYqmoUeSjt6C8yqYuPTnp0rNQ8U5ZKlccboYxtB4gvNKMa149P+rejg0dxPXaJoDTb7iD3fJYEoKwKJ4Hsc1Wet027bBrfiwYOJWSClWq+/1QZHitjwVxKQfBo5PnmDYuUI6Wbr2A6A1MZMH01MoBncyuHXSKRPpABA5zGChmHCfe8HjESeWa4yIyh8L0t0oRmdiuExSLIJseL7SjS9MIzk81fBoIH6MK1MV/YuLSwXRvQOSiHR2FDpW4Q9tn+uF0Ow3K5XjvzmJ2jIwieO2yUy9GS8kmt73WZoJVJL6fYirYpt2sdMjLAA0LsEvmcUXi8Pgo5uKV0YL8f/4IHzEjwye3BdDg8O1t2U9MqzpgvV3dQUwNNfryB3624Hi8f1lNTIF6p4nVsZ7OGh0t0ssfrOputcGteSrjA7IdTAk1AG7tE2MmSzMvjju+Sr7n3QTrAxCfGg5DycJgrTgtjTxhUbHvpa/gituRY2lbxnI2MubLogAWj1A1ysZZMYpHQSjK9u76LL7+Nn0FvBBccGGaeqBsDHXM4+04qmhW0UJwxWOYLo69s4ONsG+kSbUmtYlxl/ozGBtVXel2Ydd6Wg5YCa/cYmdVczdUiiW7p7ySqcidbybHFEBCt3XNGYRrsoJCB0bGxisVw+3kHAQyO3lOX5XXPze4Fdi9HS6WoG2Wd1EBDfKGdGuuIB01PYSE8lHdSGeCfYmpBAm/QDk2j7+4o83dcPknvUY63a4vfIQkq6aCSmshEM7IMIXJ4rDsqB+KYvvY8nQKGa/t1iRqpLpEKt9t/CCe4VlSiO9smOT3nnKYQaMAcaoA1uulDgB/qxsLJA/XVG9kOzYIhxoEGOU6K4MHrUiuKm9cX3bxzcK2sQs8GRe1QqDtNj0FhWpCeopo5ipOwi2NcU7OVsnVKSlgXvkyRXepRWrBLJAxEQzX/EGOhTq0k3N59BJIMBsHDo/bXW/LTQVF+1cIrdobyDFmh5DBUJAPc6Dn0LR7P8ZdjKqPtmZXisu06yxmtP9f7PtnI9p1eusg1OeWUOB5XkfOK+JR0k8XHTjfjXeWb98uPl2DNxPi/wcf18/af7wsbk0Vv4DrxW2y27XmuYy3P8qqS+igvoLAgjVZv4EcUuq5TdDu9qep9wnbzeOk78Wtmnuc77qBwoaie1mc9KzrTeI1b7Kh+ILABlAgjjPThNSF8nte2WgRun67+/a8I/3zf9ccjy/VGc9w6Hw5n4+bJDnfQbzPKN/OjRn3LK8H1UW12Pjyf1UYn2lXtRjNaM7toNg4nxsDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDgb47/ARDPJcanNgYoAAAAAElFTkSuQmCC
+			width="100" height="100"></p>
+		
+		</div>
+	</form> 
+
+</body>
+</html>
